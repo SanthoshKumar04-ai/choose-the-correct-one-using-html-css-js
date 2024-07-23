@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssfullform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr><th colspan="2">In Web Design,CSS stands for</th></tr>
+        <tr><td class="opt">A</td><td  id="one" onclick="wrong()" ><span   >Centralized Security System</span></td></tr>
+        <tr><td class="opt">B</td><td  id="two" onclick="wrong1()"><span >Common Song Service</span></td></tr>
+        <tr><td class="opt">C</td><td  id="three" onclick="wrong2()"><span >Candyman super sample</span></td></tr>
+        <tr><td class="opt">D</td><td  id="four" onclick="correct()"><span >Cascading Style Sheet</span></td></tr>
+    </table>
+
+<script>
+ let op1=document.getElementById('one');
+ let op2=document.getElementById('two');
+ let op3=document.getElementById('three');
+ let op4=document.getElementById('four');
+
+ function wrong(){
+    op1.style.backgroundColor="red";
+    op2.style.backgroundColor="white";
+    op3.style.backgroundColor="white";
+    op4.style.backgroundColor="white";
+ }
+ function wrong1(){
+    op2.style.backgroundColor="red";
+    op1.style.backgroundColor="white";
+    op3.style.backgroundColor="white";
+    op4.style.backgroundColor="white";
+ }
+ function wrong2(){
+    op3.style.backgroundColor="red";
+    op1.style.backgroundColor="white";
+    op2.style.backgroundColor="white";
+    op4.style.backgroundColor="white";
+ }
+ function correct(){
+    op4.style.backgroundColor="green";
+    op1.style.backgroundColor="white";
+    op2.style.backgroundColor="white";
+    op3.style.backgroundColor="white";
+ }
+ 
+</script>
+</body>
+</html>
